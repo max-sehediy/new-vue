@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <h1>Hello new-vue</h1>
+    <!-- <h1>Hello new-vue</h1> -->
     <!-- <product-info /> -->
     <!-- <random-value :itemsList="wishes" /> -->
     <!-- <sum /> -->
-    <bank-account />
-    <authorization :access="users" />
+    <!-- <bank-account /> -->
+    <!-- <authorization :access="users" /> -->
     <!-- <example :example="myUserList" /> -->
+    <shop />
   </div>
 </template>
 
 <script>
-import BankAccount from "./components/BankAccount";
-import Authorization from "./components/Authorization";
+// import BankAccount from "./components/BankAccount";
+// import Authorization from "./components/Authorization";
+import Shop from "./components/Shop";
 
 export default {
   name: "App",
   components: {
-    BankAccount,
-    Authorization,
+    // BankAccount,
+    // Authorization,
+    Shop,
   },
   data() {
     return {
@@ -39,7 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 body {
   background-color: darkgray;
