@@ -1,36 +1,15 @@
 <template>
   <div id="app">
-    <!-- <h1>Hello new-vue</h1> -->
-    <!-- <product-info /> -->
-    <!-- <random-value :itemsList="wishes" /> -->
-    <!-- <sum /> -->
-    <!-- <bank-account /> -->
-    <!-- <authorization :access="users" /> -->
-    <!-- <example :example="myUserList" /> -->
-    <shop />
+    <router-view>
+    </router-view>
   </div>
 </template>
 
 <script>
-// import BankAccount from "./components/BankAccount";
-// import Authorization from "./components/Authorization";
-import Shop from "./components/Shop";
 
 export default {
   name: "App",
   components: {
-    // BankAccount,
-    // Authorization,
-    Shop,
-  },
-  data() {
-    return {
-      wishes: ["money", "love", "peace", "friend"],
-      users: [
-        { name: "max", password: "test" },
-        { name: "bob", password: "555" },
-      ],
-    };
   },
 };
 </script>
