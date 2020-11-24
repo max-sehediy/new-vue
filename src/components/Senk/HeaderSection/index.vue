@@ -17,6 +17,7 @@
       </b-navbar-item>
       <b-navbar-item href="#"> Контакти </b-navbar-item>
     </template>
+    <div class=""></div>
 
     <template slot="end">
       <b-navbar-item tag="div">

@@ -18,7 +18,7 @@
           :key="category"
           :value="category"
         >
-          {{ category.toUpperCase() }}
+          <!-- {{ category.toUpperCase() }} -->
         </option>
       </b-select>
     </b-field>
@@ -34,12 +34,6 @@ export default {
       numbers: [],
       min: null,
     };
-  },
-  watch: {
-    numbers(newValue) {
-      console.log(newValue);
-      this.filterPriceSet(newValue);
-    },
   },
   computed: {
     ...mapGetters(["showProductList"]),
@@ -65,13 +59,6 @@ export default {
       });
       return Math.max(...arrMin.filter((e) => e > 0));
     },
-    // minMax() {
-    //   let a = this.minPrice + 20;
-    //   let b = this.maxPrice - 20;
-    //   console.log(a, b);
-    //   return this.numbers[(a, b)];
-    // не працює
-    // },
     categoryFilter() {
       let catArr = this.showProductList.map((el) => el.category);
       let categoryData = new Set(catArr);
